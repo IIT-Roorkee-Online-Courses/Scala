@@ -1,0 +1,62 @@
+[anushaje20201863@cxln5 ~]$ scala
+Welcome to Scala 2.11.8 (OpenJDK 64-Bit Server VM, Java 1.8.0_212).
+Type in expressions for evaluation. Or try :help.
+
+Adding to numbers
+scala> 2 + 4
+res0: Int = 6
+Result is res0 and data type in integer
+
+Typing result res0 also prints the output
+scala> res0
+res1: Int = 6
+
+Assigning a variable x = 10 and getting the results
+scala> var x = 10
+x: Int = 10
+Multiplication
+scala> var y = x * 4
+y: Int = 40
+
+Using print and string
+scala> print("Hello, World!")
+Hello, World!
+
+Character use single quotes
+scala> var a = 'h'
+a: Char = h
+
+Import functions
+scala> import math._
+import math._
+Finding squareroot
+scala> sqrt(25)
+res3: Double = 5.0
+
+Compute interest, given principal, rate and duration
+scala> var princpal = 10
+princpal: Int = 10
+scala> var principal = 10
+principal: Int = 10
+scala> var rate = 10
+rate: Int = 10
+scala> var duration = 4
+duration: Int = 4
+scala> var interest = principal * rate * duration / 100
+interest: Int = 4
+
+Change the value of principal to 100 and compute interest
+scala> var principal = 100
+principal: Int = 100
+scala> var interest = principal * rate * duration / 100
+interest: Int = 40
+
+Defining a method simpleInterest
+scala> def simpleInterest(principal: Int, rate: Double, duration: Int): Double = {
+     | var interest = principal * rate * duration / 100;
+     | return interest;
+     | }
+simpleInterest: (principal: Int, rate: Double, duration: Int)Double
+scala> simpleInterest(700, 7, 4)
+res0: Double = 196.0
+scala>
